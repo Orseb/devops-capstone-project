@@ -65,7 +65,7 @@ class TestAccount(unittest.TestCase):
         self.assertEqual(account.phone_number, fake_account.phone_number)
         self.assertEqual(account.date_joined, fake_account.date_joined)
 
-    def test_add_a_account(self):
+    def test_add_an_account(self):
         """It should Create an account and add it to the database"""
         accounts = Account.all()
         self.assertEqual(accounts, [])
